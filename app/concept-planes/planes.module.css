@@ -1,0 +1,616 @@
+.page {
+  --ivory: #f0ece3;
+  --ivory-soft: #e5ddd0;
+  --ink: #171913;
+  --forest: #1c2b23;
+  --rose-bronze: #c39a84;
+  --rose-deep: #9e7061;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--ivory-soft);
+  color: var(--ink);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.page h1,
+.page h2,
+.page h3,
+.page strong,
+.wordmark {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+.page em {
+  font-weight: 400;
+}
+
+.studyHeader {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  min-height: 72px;
+  padding: 0 36px;
+  background: var(--ivory);
+}
+
+.studyHeader p,
+.studyHeader > a:last-child {
+  margin: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+.studyHeader > a:last-child {
+  justify-self: end;
+}
+
+.wordmark {
+  font-size: 21px;
+  letter-spacing: -0.04em;
+}
+
+.studyIntro {
+  display: grid;
+  min-height: 760px;
+  grid-template-columns: 1fr 3fr 1.15fr;
+  gap: 5vw;
+  align-items: end;
+  padding: 90px 5vw 74px;
+  background: var(--forest);
+  color: #f7f3eb;
+}
+
+.studyIntro > p:first-child,
+.evidenceHeading > p:first-child,
+.cityLead > p:first-child {
+  align-self: start;
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.studyIntro h1 {
+  margin: 0;
+  font-size: clamp(75px, 9.5vw, 150px);
+  line-height: 0.85;
+  letter-spacing: -0.065em;
+}
+
+.studyIntro h1 em {
+  color: var(--rose-bronze);
+}
+
+.studyIntro > p:last-child {
+  max-width: 330px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.statsStage {
+  display: grid;
+  grid-template-columns: 58fr 42fr;
+  min-height: 980px;
+  padding: 18px;
+  gap: 18px;
+  background: var(--ivory-soft);
+}
+
+.domePlane {
+  position: relative;
+  min-height: 760px;
+  overflow: hidden;
+}
+
+.domePlane img,
+.cityImage img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.domeShade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(6, 9, 7, 0.72), transparent 65%);
+}
+
+.domeCopy {
+  position: absolute;
+  z-index: 1;
+  right: 36px;
+  bottom: 38px;
+  left: 36px;
+  color: white;
+}
+
+.domeCopy span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.domeCopy p {
+  max-width: 700px;
+  margin: 110px 0 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(42px, 5vw, 80px);
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+}
+
+.statsPlanes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.15fr 0.85fr 1fr;
+  gap: 18px;
+}
+
+.statsPlanes article {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.statsPlanes strong {
+  display: block;
+  font-size: clamp(64px, 7vw, 112px);
+  line-height: 0.8;
+  letter-spacing: -0.075em;
+}
+
+.statsPlanes small {
+  font-size: 0.25em;
+  letter-spacing: 0;
+}
+
+.statsPlanes p {
+  max-width: 190px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.statLand {
+  grid-column: 1 / -1;
+  background: var(--rose-bronze);
+}
+
+.statProjects {
+  background: var(--ivory);
+}
+
+.statPeople {
+  background: var(--rose-deep);
+  color: white;
+}
+
+.statSeats {
+  grid-column: 1 / -1;
+  background: var(--forest);
+  color: white;
+}
+
+.evidenceSection {
+  padding: 130px 5vw 120px;
+  background: var(--ivory);
+}
+
+.evidenceHeading {
+  display: grid;
+  grid-template-columns: 1fr 2.4fr 1fr;
+  gap: 5vw;
+  align-items: end;
+}
+
+.evidenceHeading h2,
+.cityLead h2 {
+  margin: 0;
+  font-size: clamp(65px, 7.4vw, 118px);
+  line-height: 0.88;
+  letter-spacing: -0.06em;
+}
+
+.evidenceHeading h2 em,
+.cityLead h2 em {
+  color: var(--rose-deep);
+}
+
+.evidenceHeading > p:last-child {
+  max-width: 320px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.48;
+}
+
+.evidencePlanes {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 70px 280px 80px 280px 90px 300px;
+  margin-top: 120px;
+}
+
+.evidencePlanes article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 34px 38px;
+}
+
+.evidencePlanes h3 {
+  margin: 0;
+  font-size: clamp(50px, 6vw, 92px);
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+}
+
+.evidencePlanes p {
+  max-width: 380px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.landPlane {
+  grid-column: 1 / 8;
+  grid-row: 1 / 3;
+  background: var(--forest);
+  color: white;
+}
+
+.unitsPlane {
+  grid-column: 7 / 13;
+  grid-row: 3 / 5;
+  z-index: 1;
+  background: var(--rose-bronze);
+}
+
+.occupancyPlane {
+  grid-column: 2 / 10;
+  grid-row: 5 / 7;
+  background: var(--ivory-soft);
+}
+
+.projection {
+  max-width: 750px;
+  margin: 100px 0 0 auto;
+  color: var(--rose-deep);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(36px, 4.2vw, 66px);
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+}
+
+.citySection {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  min-height: 1180px;
+  padding: 18px;
+  gap: 18px;
+  background: var(--forest);
+}
+
+.cityImage {
+  position: relative;
+  min-height: 900px;
+  overflow: hidden;
+}
+
+.cityImage img {
+  opacity: 0;
+  transform: scale(1.025);
+  transition: opacity 400ms ease, transform 900ms ease;
+}
+
+.cityImage .cityImageActive {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cityImage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(5, 8, 6, 0.55), transparent 45%);
+}
+
+.cityImageCaption {
+  position: absolute;
+  z-index: 1;
+  right: 34px;
+  bottom: 32px;
+  left: 34px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  color: white;
+}
+
+.cityImageCaption span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.cityImageCaption strong {
+  max-width: 390px;
+  font-size: 35px;
+  line-height: 1;
+  text-align: right;
+}
+
+.cityControls {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cityLead {
+  flex: 1 1 auto;
+  padding: 44px 42px;
+  background: var(--ivory);
+}
+
+.cityLead h2 {
+  margin-top: 58px;
+  font-size: clamp(52px, 5.3vw, 84px);
+}
+
+.cityLead > p:last-child {
+  max-width: 480px;
+  margin: 55px 0 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cityMode {
+  display: grid;
+  flex: 0 0 auto;
+  grid-template-columns: 1fr 0fr;
+  gap: 0;
+  min-height: 96px;
+  padding: 24px 26px;
+  overflow: hidden;
+  color: var(--ink);
+  background: var(--ivory-soft);
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: left;
+  transition: grid-template-columns 350ms ease, background-color 250ms ease;
+}
+
+.cityMode strong {
+  align-self: center;
+  font-size: clamp(23px, 2vw, 31px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.cityMode span {
+  min-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  transition: opacity 180ms ease 50ms;
+}
+
+.cityModeActive {
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+  min-height: 132px;
+  background: var(--rose-bronze);
+}
+
+.cityModeActive span {
+  opacity: 1;
+}
+
+.studyFooter {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  min-height: 110px;
+  padding: 0 36px;
+  background: var(--ivory);
+}
+
+.studyFooter p,
+.studyFooter > a:last-child {
+  margin: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+.studyFooter > a:last-child {
+  justify-self: end;
+}
+
+@media (max-width: 980px) {
+  .studyIntro {
+    grid-template-columns: 1fr;
+    min-height: 680px;
+    align-items: start;
+    padding: 72px 24px 52px;
+  }
+
+  .studyIntro > p:last-child {
+    align-self: end;
+  }
+
+  .statsStage,
+  .citySection {
+    grid-template-columns: 1fr;
+  }
+
+  .domePlane {
+    min-height: 720px;
+  }
+
+  .statsPlanes {
+    min-height: 720px;
+  }
+
+  .evidenceSection {
+    padding: 90px 24px;
+  }
+
+  .evidenceHeading {
+    grid-template-columns: 1fr;
+  }
+
+  .evidenceHeading > p:last-child {
+    margin: 20px 0 0 auto;
+  }
+
+  .evidencePlanes {
+    margin-top: 80px;
+  }
+
+  .cityImage {
+    min-height: 740px;
+  }
+}
+
+@media (max-width: 620px) {
+  .studyHeader {
+    grid-template-columns: 1fr auto;
+    min-height: 64px;
+    padding: 0 18px;
+  }
+
+  .studyHeader p {
+    display: none;
+  }
+
+  .studyIntro h1 {
+    font-size: 20vw;
+  }
+
+  .statsStage,
+  .citySection {
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .domePlane {
+    min-height: 620px;
+  }
+
+  .domeCopy {
+    right: 20px;
+    bottom: 22px;
+    left: 20px;
+  }
+
+  .domeCopy p {
+    font-size: 42px;
+  }
+
+  .statsPlanes {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 250px);
+    min-height: 0;
+    gap: 8px;
+  }
+
+  .statLand,
+  .statSeats {
+    grid-column: auto;
+  }
+
+  .statsPlanes article {
+    padding: 24px;
+  }
+
+  .evidenceHeading h2,
+  .cityLead h2 {
+    font-size: 15vw;
+  }
+
+  .evidencePlanes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .evidencePlanes article {
+    min-height: 300px;
+    padding: 26px;
+  }
+
+  .projection {
+    margin-top: 70px;
+    font-size: 38px;
+  }
+
+  .cityImage {
+    min-height: 570px;
+  }
+
+  .cityImageCaption {
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cityImageCaption strong {
+    text-align: left;
+  }
+
+  .cityControls {
+    gap: 8px;
+  }
+
+  .cityLead {
+    padding: 34px 24px;
+  }
+
+  .cityMode,
+  .cityModeActive {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    min-height: 92px;
+  }
+
+  .cityMode span {
+    display: none;
+  }
+
+  .cityModeActive span {
+    display: block;
+  }
+
+  .studyFooter {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 30px 18px;
+  }
+
+  .studyFooter > a:last-child {
+    justify-self: start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cityImage img,
+  .cityMode,
+  .cityMode span {
+    transition: none;
+  }
+}

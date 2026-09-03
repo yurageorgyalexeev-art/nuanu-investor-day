@@ -1,0 +1,602 @@
+.page {
+  --ivory: #f1eee6;
+  --sand: #ddd4c8;
+  --ink: #171914;
+  --forest: #1c2b23;
+  --rose: #b9907f;
+  --rose-pale: #d2b6a9;
+  --rule: rgba(23, 25, 20, 0.24);
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.page h1,
+.page h2,
+.page h3,
+.page strong,
+.wordmark {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+.page em {
+  font-weight: 400;
+}
+
+.studyHeader {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  min-height: 72px;
+  padding: 0 38px;
+  background: var(--ivory);
+}
+
+.wordmark {
+  font-size: 21px;
+  letter-spacing: -0.04em;
+}
+
+.studyHeader nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+.studyHeader nav strong {
+  padding: 11px 17px;
+  background: var(--rose-pale);
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.studyIntro {
+  display: grid;
+  min-height: 720px;
+  grid-template-columns: 0.7fr 2.5fr 0.9fr;
+  gap: 5vw;
+  align-items: end;
+  padding: 90px 5vw 70px;
+  background: var(--forest);
+  color: #f8f4ec;
+}
+
+.studyIntro > p:first-child,
+.evidenceTitle > p:first-child,
+.cityTitle > p:first-child {
+  align-self: start;
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.studyIntro h1 {
+  margin: 0;
+  font-size: clamp(72px, 8.7vw, 138px);
+  line-height: 0.87;
+  letter-spacing: -0.06em;
+}
+
+.studyIntro h1 em {
+  color: var(--rose-pale);
+}
+
+.studyIntro > p:last-child {
+  max-width: 320px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.statsSection {
+  display: grid;
+  grid-template-columns: 61fr 39fr;
+  min-height: 980px;
+}
+
+.domeImage {
+  position: relative;
+  min-height: 780px;
+  overflow: hidden;
+}
+
+.domeImage img,
+.cityImage img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.domeShade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(7, 10, 8, 0.72), transparent 67%);
+}
+
+.domeCaption {
+  position: absolute;
+  z-index: 1;
+  right: 38px;
+  bottom: 42px;
+  left: 38px;
+  color: white;
+}
+
+.domeCaption span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.domeCaption p {
+  max-width: 720px;
+  margin: 120px 0 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(43px, 5vw, 78px);
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+}
+
+.statsField {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.15fr 0.85fr 0.8fr;
+  background: var(--forest);
+  color: white;
+}
+
+.statsField article {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 34px;
+}
+
+.statsField article:first-child {
+  grid-column: 1 / -1;
+}
+
+.statsField strong {
+  font-size: clamp(66px, 7vw, 112px);
+  line-height: 0.82;
+  letter-spacing: -0.075em;
+}
+
+.statsField small {
+  font-size: 0.25em;
+  letter-spacing: 0;
+}
+
+.statsField p {
+  max-width: 185px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.statsField .seatsStat {
+  grid-column: 1 / -1;
+  background: var(--rose);
+  color: var(--ink);
+}
+
+.statsField .seatsStat p {
+  color: var(--ink);
+}
+
+.evidenceSection {
+  padding: 128px 5vw 120px;
+  background: var(--ivory);
+}
+
+.evidenceTitle {
+  display: grid;
+  grid-template-columns: 0.7fr 2.4fr 0.9fr;
+  gap: 5vw;
+  align-items: end;
+}
+
+.evidenceTitle h2,
+.cityTitle h2 {
+  margin: 0;
+  font-size: clamp(64px, 7.2vw, 114px);
+  line-height: 0.89;
+  letter-spacing: -0.058em;
+}
+
+.evidenceTitle h2 em,
+.cityTitle h2 em {
+  color: var(--rose);
+}
+
+.evidenceTitle > p:last-child {
+  max-width: 330px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.48;
+}
+
+.evidenceBody {
+  display: grid;
+  grid-template-columns: 1.45fr 0.75fr;
+  gap: 4vw;
+  align-items: end;
+  margin-top: 116px;
+}
+
+.evidenceList {
+  background: var(--sand);
+  padding: 22px 38px;
+}
+
+.evidenceList article {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.9fr) 1.1fr;
+  gap: 40px;
+  align-items: baseline;
+  min-height: 190px;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.evidenceList article:last-child {
+  border-bottom: 0;
+}
+
+.evidenceList h3 {
+  margin: 0;
+  font-size: clamp(44px, 4.7vw, 75px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.evidenceList p {
+  max-width: 400px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.projection {
+  margin: 0 0 64px -8vw;
+  padding: 42px 42px 46px;
+  background: var(--rose);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(30px, 3.2vw, 50px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.citySection {
+  background: var(--forest);
+  color: white;
+}
+
+.cityTitle {
+  display: grid;
+  grid-template-columns: 0.7fr 2.4fr 0.9fr;
+  gap: 5vw;
+  align-items: end;
+  padding: 128px 5vw 105px;
+}
+
+.cityTitle h2 em {
+  color: var(--rose-pale);
+}
+
+.cityTitle > p:last-child {
+  max-width: 340px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cityExperience {
+  display: grid;
+  grid-template-columns: 61fr 39fr;
+  min-height: 960px;
+  background: var(--ivory);
+  color: var(--ink);
+}
+
+.cityImage {
+  position: relative;
+  min-height: 760px;
+  overflow: hidden;
+}
+
+.cityImage img {
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 400ms ease, transform 900ms ease;
+}
+
+.cityImage .cityImageActive {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cityImage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(6, 9, 7, 0.5), transparent 45%);
+}
+
+.cityImage > p {
+  position: absolute;
+  z-index: 1;
+  right: 38px;
+  bottom: 35px;
+  left: 38px;
+  margin: 0;
+  color: white;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(33px, 4vw, 62px);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.cityList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 46px 4vw;
+}
+
+.cityList button {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  gap: 0;
+  min-height: 132px;
+  align-items: center;
+  padding: 26px 20px;
+  overflow: hidden;
+  background: transparent;
+  color: var(--ink);
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  border-radius: 0;
+  cursor: pointer;
+  text-align: left;
+  transition: grid-template-columns 350ms ease, gap 350ms ease, background-color 220ms ease, padding 220ms ease;
+}
+
+.cityList button:first-child {
+  border-top: 1px solid var(--rule);
+}
+
+.cityList strong {
+  min-width: 0;
+  font-size: clamp(24px, 2.35vw, 38px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.cityList span {
+  min-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  font-size: 13px;
+  line-height: 1.48;
+  transition: opacity 160ms ease;
+}
+
+.cityList .cityItemActive {
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 25px;
+  margin: 10px -22px;
+  padding-right: 42px;
+  padding-left: 42px;
+  background: var(--rose-pale);
+  border-color: transparent;
+}
+
+.cityList .cityItemActive + button {
+  border-top-color: transparent;
+}
+
+.cityList .cityItemActive span {
+  opacity: 1;
+}
+
+.studyFooter {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  min-height: 110px;
+  padding: 0 38px;
+  background: var(--ivory);
+}
+
+.studyFooter p,
+.studyFooter a:not(.wordmark) {
+  margin: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+.studyFooter > div {
+  display: flex;
+  justify-self: end;
+  gap: 25px;
+}
+
+@media (max-width: 980px) {
+  .studyIntro {
+    grid-template-columns: 1fr;
+    min-height: 680px;
+    align-items: start;
+    padding: 72px 24px 52px;
+  }
+
+  .studyIntro > p:last-child {
+    align-self: end;
+  }
+
+  .statsSection,
+  .cityExperience {
+    grid-template-columns: 1fr;
+  }
+
+  .domeImage,
+  .cityImage {
+    min-height: 720px;
+  }
+
+  .statsField {
+    min-height: 740px;
+  }
+
+  .evidenceSection {
+    padding: 90px 24px;
+  }
+
+  .evidenceTitle,
+  .cityTitle {
+    grid-template-columns: 1fr;
+  }
+
+  .evidenceTitle > p:last-child,
+  .cityTitle > p:last-child {
+    margin: 20px 0 0 auto;
+  }
+
+  .evidenceBody {
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+  }
+
+  .projection {
+    max-width: 520px;
+    margin: -24px 30px 0 auto;
+  }
+
+  .cityTitle {
+    padding: 90px 24px 76px;
+  }
+}
+
+@media (max-width: 650px) {
+  .studyHeader {
+    min-height: 64px;
+    padding: 0 18px;
+  }
+
+  .studyHeader nav {
+    gap: 13px;
+    font-size: 8px;
+  }
+
+  .studyHeader nav strong {
+    padding: 9px 11px;
+  }
+
+  .studyIntro h1 {
+    font-size: 18vw;
+  }
+
+  .domeImage,
+  .cityImage {
+    min-height: 580px;
+  }
+
+  .domeCaption {
+    right: 20px;
+    bottom: 22px;
+    left: 20px;
+  }
+
+  .domeCaption p {
+    margin-top: 85px;
+    font-size: 40px;
+  }
+
+  .statsField {
+    display: flex;
+    min-height: 0;
+    flex-direction: column;
+  }
+
+  .statsField article {
+    min-height: 230px;
+    padding: 25px;
+  }
+
+  .evidenceTitle h2,
+  .cityTitle h2 {
+    font-size: 14vw;
+  }
+
+  .evidenceList {
+    padding: 10px 24px;
+  }
+
+  .evidenceList article {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    min-height: 260px;
+  }
+
+  .projection {
+    margin: -16px 0 0 20px;
+    font-size: 32px;
+  }
+
+  .cityList {
+    padding: 32px 20px;
+  }
+
+  .cityList button,
+  .cityList .cityItemActive {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    min-height: 105px;
+  }
+
+  .cityList .cityItemActive {
+    margin: 8px -8px;
+    padding: 28px;
+  }
+
+  .cityList span {
+    display: none;
+  }
+
+  .cityList .cityItemActive span {
+    display: block;
+  }
+
+  .studyFooter {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 30px 18px;
+  }
+
+  .studyFooter > div {
+    justify-self: start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cityImage img,
+  .cityList button,
+  .cityList span {
+    transition: none;
+  }
+}

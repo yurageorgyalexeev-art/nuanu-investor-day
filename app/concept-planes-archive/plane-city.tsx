@@ -27,7 +27,7 @@ const cityModes = [
   },
   {
     title: 'What is still to come',
-    text: 'The masterplan runs to 2028. Each phase brings more people to the businesses already operating here.',
+    text: 'The masterplan runs to 2028. Each phase adds footfall to the assets already trading.',
     image: '/images/investor-day/city-future.jpg',
     alt: 'Future phase of the Nuanu masterplan',
     caption: 'Masterplan · Through 2028',
@@ -61,7 +61,8 @@ export function PlaneCity() {
           <h2>It already exists, and people <em>already come.</em></h2>
           <p>
             Nuanu is 44 hectares on the Tabanan coast. Construction began in 2021. More than
-            thirty projects are built and operate today.
+            thirty projects are built and trading, and around 2,500 people come through on an
+            average day.
           </p>
         </div>
         {cityModes.map((mode, index) => (

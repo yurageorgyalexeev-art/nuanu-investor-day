@@ -5,16 +5,24 @@ import styles from './planes.module.css';
 
 const slides = [
   { src: '/images/investor-day/slideshow/01-city-aerial.jpg', alt: 'Nuanu Creative City seen from above', position: 'center 50%' },
-  { src: '/images/investor-day/slideshow/04-villa-exterior.jpg', alt: 'Contemporary tropical architecture at Nuanu', position: 'center 52%' },
+  { src: '/images/investor-day/slideshow/13-villa-courtyard.jpg', alt: 'A private tropical courtyard residence', position: 'center 51%' },
   { src: '/images/investor-day/slideshow/08-people-night.jpg', alt: 'Guests enjoying an evening at Nuanu', position: 'center 47%' },
-  { src: '/images/investor-day/slideshow/06-bamboo-interior.jpg', alt: 'Sculptural bamboo interior at Nuanu', position: 'center 48%' },
+  { src: '/images/investor-day/slideshow/14-elysium-venue.jpg', alt: 'A sculptural ceremony venue facing the ocean', position: 'center 50%' },
   { src: '/images/investor-day/slideshow/12-city-panorama.jpg', alt: 'A wide view of Nuanu Creative City and the Bali coastline', position: 'center 52%' },
+  { src: '/images/investor-day/slideshow/15-luna-pool.jpg', alt: 'Luna Residence pool at sunset', position: 'center 48%' },
   { src: '/images/investor-day/slideshow/09-butterfly.jpg', alt: 'A butterfly held gently in the hands of a visitor', position: 'center 48%' },
-  { src: '/images/investor-day/slideshow/05-luna-beach.jpg', alt: 'Luna Residence at Nyanyi Beach', position: 'center 55%' },
-  { src: '/images/investor-day/slideshow/10-art-crowd.jpg', alt: 'Art and community gathering at sunset', position: 'center 50%' },
+  { src: '/images/investor-day/slideshow/16-pavilions-entrance.jpg', alt: 'The Pavilions entrance framed by tropical landscape', position: 'center 50%' },
+  { src: '/images/investor-day/slideshow/06-bamboo-interior.jpg', alt: 'Sculptural bamboo interior at Nuanu', position: 'center 48%' },
   { src: '/images/investor-day/slideshow/02-coast-sunset.jpg', alt: 'Nuanu coastline and THK tower at sunset', position: 'center 54%' },
+  { src: '/images/investor-day/slideshow/17-villa-pool-interior.jpg', alt: 'An open tropical interior beside a private pool', position: 'center 50%' },
+  { src: '/images/investor-day/slideshow/10-art-crowd.jpg', alt: 'Art and community gathering at sunset', position: 'center 50%' },
+  { src: '/images/investor-day/slideshow/18-pavilions-aerial.jpg', alt: 'The Pavilions set within the palm forest', position: 'center 48%' },
+  { src: '/images/investor-day/slideshow/19-bamboo-detail.jpg', alt: 'A spiral bamboo architectural detail', position: 'center 50%' },
+  { src: '/images/investor-day/slideshow/05-luna-beach.jpg', alt: 'Luna Residence at Nyanyi Beach', position: 'center 55%' },
   { src: '/images/investor-day/slideshow/11-media-art.jpg', alt: 'Immersive media art performance at Nuanu', position: 'center 46%' },
   { src: '/images/investor-day/slideshow/03-dome-aerial.jpg', alt: 'Nuanu architecture between the jungle and the ocean', position: 'center 48%' },
+  { src: '/images/investor-day/slideshow/20-luna-terrace.jpg', alt: 'A Luna Residence terrace at sunset', position: 'center 50%' },
+  { src: '/images/investor-day/slideshow/04-villa-exterior.jpg', alt: 'Contemporary tropical architecture at Nuanu', position: 'center 52%' },
   { src: '/images/investor-day/slideshow/07-lumeria-pool.jpg', alt: 'Lumeria wellness pool surrounded by tropical greenery', position: 'center 52%' },
 ];
 

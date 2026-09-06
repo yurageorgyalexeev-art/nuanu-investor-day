@@ -37,3 +37,10 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# local design sources and handoff artifacts
+/Photos/
+/.tmp-photo-review/
+/Investor Day.zip
+/Nuanu-Investor-Day-GitHub.zip
+/.openai/site-release.tar.gz

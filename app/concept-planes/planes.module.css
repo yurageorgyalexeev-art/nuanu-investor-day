@@ -2667,6 +2667,23 @@
     font-size: clamp(70px, 12.5vw, 118px);
   }
 
+  .heroBottom {
+    grid-template-columns: minmax(0, 1.15fr) minmax(250px, 0.85fr);
+    gap: clamp(26px, 4vw, 44px);
+  }
+
+  .heroActions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .heroActions a:first-child,
+  .heroActions a:last-child {
+    min-width: 0;
+    width: 100%;
+  }
+
   .entryConditions {
     grid-template-columns: 1fr 1fr;
   }
@@ -2856,6 +2873,44 @@
 
   .legalCopy {
     max-width: 720px;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .evidencePlane {
+    color: white !important;
+  }
+
+  .evidencePlane,
+  .evidencePlaneActive {
+    transform: scale(1);
+  }
+
+  .evidencePlane > img,
+  .evidencePlane > .evidencePlaneShade {
+    opacity: 1;
+  }
+
+  .evidencePlane > img,
+  .evidencePlaneActive > img {
+    transform: scale(1.025);
+  }
+
+  .evidencePlane:nth-child(1) > .evidencePlaneShade {
+    background: linear-gradient(180deg, rgba(18, 39, 31, 0.12), rgba(9, 28, 22, 0.74));
+  }
+
+  .evidencePlane:nth-child(2) > .evidencePlaneShade {
+    background: linear-gradient(180deg, rgba(86, 51, 41, 0.1), rgba(76, 38, 31, 0.72));
+  }
+
+  .evidencePlane:nth-child(3) > .evidencePlaneShade {
+    background: linear-gradient(180deg, rgba(63, 19, 31, 0.1), rgba(52, 14, 26, 0.74));
+  }
+
+  .evidencePlaneContent,
+  .evidencePlaneActive .evidencePlaneContent {
+    transform: scale(1);
   }
 }
 
